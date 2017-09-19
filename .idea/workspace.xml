@@ -473,7 +473,7 @@
       <workItem from="1505625063927" duration="14761000" />
       <workItem from="1505734123936" duration="6658000" />
       <workItem from="1505741318086" duration="11947000" />
-      <workItem from="1505798435101" duration="5341000" />
+      <workItem from="1505798435101" duration="5376000" />
     </task>
     <task id="LOCAL-00001" summary="初步实现了应用逻辑">
       <created>1505802789009</created>
@@ -503,11 +503,18 @@
       <option name="project" value="LOCAL" />
       <updated>1505803481227</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="上传sql文件">
+      <created>1505803872208</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1505803872209</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114220000" />
+    <option name="totallyTimeSpent" value="114255000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -597,7 +604,8 @@
     <MESSAGE value="初步实现了应用逻辑" />
     <MESSAGE value="修改一下说明" />
     <MESSAGE value="完善说明" />
-    <option name="LAST_COMMIT_MESSAGE" value="完善说明" />
+    <MESSAGE value="上传sql文件" />
+    <option name="LAST_COMMIT_MESSAGE" value="上传sql文件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
