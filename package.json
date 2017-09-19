@@ -1,0 +1,22 @@
+{
+  "name": "information",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angular-ui-router": "^1.0.3",
+    "async": "0.2.9",
+    "bootstrap": "^3.3.7",
+    "cheerio": "0.12.3",
+    "debug": "~0.7.4",
+    "express": "~3.4.8",
+    "jquery": "^3.2.1",
+    "mysql": "2.x",
+    "node-schedule": "^1.2.5",
+    "request": "2.27.0",
+    "socket.io": "^2.0.3"
+  }
+}
