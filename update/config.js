@@ -8,9 +8,6 @@ exports.db = mysql.createConnection({
   password:        'ylx'             // 数据库用户对应的密码
 });
 
-exports.page = {
-  url: 'http://jwc.scu.edu.cn/jwc/frontPage.action'
-};
+exports.page = ['jwc','xgb'];
 
-// 定时更新
-exports.autoUpdate = '* */30 * * *';  // 任务执行规则，参考 cron 语法
+

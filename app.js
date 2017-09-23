@@ -12,11 +12,11 @@ app.use(app.router);
 
 routes(app);
 
-schedule.scheduleJob('30 * * * * *', function(){
-    console.log('test');
-    var update = childProcess.spawn(process.execPath, [path.resolve(__dirname, 'update/all.js')]);
-    update.stdout.pipe(process.stdout);
-    update.stderr.pipe(process.stderr);
-});
+// schedule.scheduleJob('30 * * * * *', function(){
+//     console.log('test');
+//     var update = childProcess.spawn(process.execPath, [path.resolve(__dirname, 'update/jwc/all.js')]);
+//     update.stdout.pipe(process.stdout);
+//     update.stderr.pipe(process.stderr);
+// });
 
 module.exports = app;

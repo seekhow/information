@@ -6,13 +6,11 @@
     <p ng-bind-html="content">
 
     </p>
+    <p>原文链接<a target="_blank" ng-href="{{link}}">{{link}}</a>：</p>
     <hr>
     <div>
         <a class="file" ng-repeat="x in file" ng-href="http://jwc.scu.edu.cn/jwc/download.action?fileName={{x.fileId}}">
             {{x.fileName}} <br>
         </a>
     </div>
-    <p>
-        <a class="btn btn-primary btn-large" ui-sref="/index">返回</a>
-    </p>
 </div>

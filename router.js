@@ -8,30 +8,32 @@ module.exports = function (app) {
     app.get('/', function (req, res) {
         res.sendfile('./public/index.html');
     });
-    app.get('/api/jwc/show', function (req, res) {
-        data.newsList(function (err, list) {
+    app.get('/api/:site/show', function (req, res) {
+        var site=req.params.site;
+        data.newsList(site,function (err, list) {
             //console.log(list);
             res.send(list);
         });
     });
-    app.get('/api/jwc/:id', function (req, res) {
+    app.get('/api/:site/:id', function (req, res) {
+        var site=req.params.site;
         var newsID = req.params.id;
         var news=[];
         async.series([
             function (done) {
-                data.newsTitle(newsID, function (err, title) {
+                data.newsTitle(site,newsID, function (err, title) {
                     news.push(title);
                     done(err);
                 })
             },
             function (done) {
-                data.newsContent(newsID, function (err, content) {
+                data.newsContent(site,newsID, function (err, content) {
                     news.push(content);
                     done(err);
                 })
             },
             function (done) {
-                data.newsFile(newsID, function (err, File) {
+                data.newsFile(site,newsID, function (err, File) {
                     news.push(File);
                     done(err);
                 })
