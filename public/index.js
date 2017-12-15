@@ -11,7 +11,7 @@ webapp.config(function ($stateProvider, $urlRouterProvider) {
             templateUrl: "public/pages/main.html",
             controller: function ($scope, $http) {
                 $scope.newslist = [];
-                $http.get('/api/jwc/show').then(
+                $http.get('/api/jwc/all').then(
                     function (res) {
                         //console.log(res.data);
                         $scope.newslist = res.data;

@@ -8,7 +8,7 @@ module.exports = function (app) {
     app.get('/', function (req, res) {
         res.sendfile('./public/index.html');
     });
-    app.get('/api/:site/show', function (req, res) {
+    app.get('/api/:site/all', function (req, res) {
         var site=req.params.site;
         data.newsList(site,function (err, list) {
             //console.log(list);

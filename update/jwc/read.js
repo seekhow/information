@@ -3,9 +3,6 @@ var cheerio = require('cheerio');
 
 /**
  * 请求指定URL
- *
- * @param {String} url
- * @param {Function} callback
  */
 function request (url, callback) {
   originRequest(url, callback);
